@@ -24,7 +24,7 @@ Retention campaigns (discount codes, win-back emails, loyalty perks) cost money.
 
 ## The data
 
-**[UCI Online Retail](https://archive.ics.uci.edu/dataset/352/online+retail):** every transaction from a UK-based online gift retailer between **1 Dec 2010 and 9 Dec 2011**, with 541,909 rows × 8 columns (invoice, product, quantity, date, unit price, customer ID, country). Many customers are wholesalers.
+**[UCI Online Retail](https://archive.ics.uci.edu/dataset/352/online+retail):** every transaction from a UK-based online gift retailer between **1 Dec 2010 and 9 Dec 2011**, with 541,909 rows × 8 columns (invoice, product, quantity, date, unit price, customer ID, country). Many customers are wholesalers. Prices are in **pounds sterling (£)**.
 
 ### Data quality issues found
 | Issue | Scale | How I handled it |
@@ -41,7 +41,7 @@ Retention campaigns (discount codes, win-back emails, loyalty perks) cost money.
   <img src="images/top_countries.png" width="49%" />
 </p>
 
-- **Strong Q4 seasonality.** Monthly revenue climbs from September and peaks in **November 2011 at about $1.5M**, nearly 3× the February low. (December 2011 looks like a drop only because the data stops on 9 December.)
+- **Strong Q4 seasonality.** Monthly revenue climbs from September and peaks in **November 2011 at about £1.5M**, nearly 3× the February low. (December 2011 looks like a drop only because the data stops on 9 December.)
 - **The UK dominates revenue.** International markets are a long tail, so country-level patterns are driven almost entirely by UK customers.
 - **Customer value is extremely skewed.** Most customers spend modest amounts while a small group of high-value (often wholesale) buyers drive bulk revenue.
 
